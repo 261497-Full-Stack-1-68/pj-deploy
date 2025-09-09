@@ -17,6 +17,39 @@ services:
       - POSTGRES_APP_PASSWORD=${POSTGRES_APP_PASSWORD}
     networks:
       - project-net
+  backend:
+    depends_on:
+      - postgres
+    image: ${BACKEND_IMAGE_NAME}
+    container_name: ${PROJECT_NAME}-backend
+    restart: always
+    networks:
+      - project-net
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_APP_USER}:${POSTGRES_APP_PASSWORD}@${PROJECT_NAME}-db:${POSTGRES_PORT}/${POSTGRES_DB}
+    post_start:
+      - command:
+          [
+            "sh",
+            "-c",
+            'bunx prisma db push',
+          ]
+  frontend:
+    depends_on:
+      - backend
+    image: ${FRONTEND_IMAGE_NAME}
+    container_name: ${PROJECT_NAME}-frontend
+    restart: always
+    ports:
+      - ${FRONTEND_PORT}:3000
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_APP_USER}:${POSTGRES_APP_PASSWORD}@${PROJECT_NAME}-db:${POSTGRES_PORT}/${POSTGRES_DB}
+      - AUTH_SECRET=${AUTH_SECRET}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - AUTH_TRUST_HOST=${AUTH_TRUST_HOST}
+    networks:
+      - project-net
 
 volumes:
   project-data:

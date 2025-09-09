@@ -14,18 +14,27 @@
 สร้างไฟล์ `.env` ในโฟลเดอร์ `pf-deploy/` และกำหนดค่าตัวแปรต่อไปนี้:
 
 ```env
-# โปรเจคชื่อ
-PROJECT_NAME=my-fullstack-project
+# Project Name
+PROJECT_NAME=
 
-# PostgreSQL Configuration
+# PostgreSQL
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+POSTGRES_APP_USER=
+POSTGRES_APP_PASSWORD=
+POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
-POSTGRES_PASSWORD=your_admin_password_here
-POSTGRES_USER=postgres
-POSTGRES_DB=your_database_name
 
-# Application User (สำหรับแอปพลิเคชัน)
-POSTGRES_APP_USER=app_user
-POSTGRES_APP_PASSWORD=your_app_password_here
+BACKEND_IMAGE_NAME=
+FRONTEND_IMAGE_NAME=
+
+AUTH_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+AUTH_TRUST_HOST=
+
+FRONTEND_PORT=
 ```
 
 ### 2. เริ่มต้น Database Service
