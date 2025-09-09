@@ -26,7 +26,7 @@ services:
     networks:
       - project-net
     environment:
-      - DATABASE_URL=postgresql://${POSTGRES_APP_USER}:${POSTGRES_APP_PASSWORD}@${PROJECT_NAME}-db:${POSTGRES_PORT}/${POSTGRES_DB}
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${PROJECT_NAME}-db:${POSTGRES_PORT}/${POSTGRES_DB}
     post_start:
       - command:
           [
