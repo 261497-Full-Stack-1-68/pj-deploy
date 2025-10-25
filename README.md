@@ -16,11 +16,11 @@
        flex-wrap: nowrap;
      ">
   <img src="./member/1.jpg"
-       style="width: clamp(120px, 25vw, 250px); aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+       style="width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 12px;" />
   <img src="./member/2.jpg"
-       style="width: clamp(120px, 25vw, 250px); aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+       style="width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 12px;" />
   <img src="./member/3.jpg"
-       style="width: clamp(120px, 25vw, 250px); aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+       style="width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 12px;" />
 </div>
 
 <table align="center">
