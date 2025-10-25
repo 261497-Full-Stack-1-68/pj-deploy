@@ -15,31 +15,14 @@
        gap: 16px;
        flex-wrap: nowrap;
      ">
-  <img src="./member/1.webp"
-       style="
-         border-radius: 12px;
-         object-fit: cover;
-         object-position: center;
-         width: clamp(120px, 25vw, 250px);
-         aspect-ratio: 1 / 1;
-       " />
+  <img src="./member/1.jpg"
+       style="width: clamp(120px, 25vw, 250px); aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
   <img src="./member/2.jpg"
-       style="
-         border-radius: 12px;
-         object-fit: cover;
-         object-position: center;
-         width: clamp(120px, 25vw, 250px);
-         aspect-ratio: 1 / 1;
-       " />
+       style="width: clamp(120px, 25vw, 250px); aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
   <img src="./member/3.jpg"
-       style="
-         border-radius: 12px;
-         object-fit: cover;
-         object-position: center;
-         width: clamp(120px, 25vw, 250px);
-         aspect-ratio: 1 / 1;
-       " />
+       style="width: clamp(120px, 25vw, 250px); aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
 </div>
+
 <table align="center">
   <tr>
     <td align="center" width="265px">
