@@ -16,29 +16,30 @@
        flex-wrap: nowrap;
      ">
   <img src="./member/1.jpg"
-       style="width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 12px;" />
+       style="width:160px; height:160px; object-fit:cover; object-position:center; border-radius:12px;" />
   <img src="./member/2.jpg"
-       style="width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 12px;" />
+       style="width:160px; height:160px; object-fit:cover; object-position:center; border-radius:12px;" />
   <img src="./member/3.jpg"
-       style="width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 12px;" />
+       style="width:160px; height:160px; object-fit:cover; object-position:center; border-radius:12px;" />
 </div>
 
-<table align="center">
+<table align="center" style="margin-top: 8px;">
   <tr>
-    <td align="center" width="265px">
-      <b>อภิวิชญ์ บุญฤทธิ์</b><br />
-      <i>650612106</i><br />
+    <td align="center" width="160px">
+      <b>อภิวิชญ์ บุญฤทธิ์</b><br>
+      <i>650612106</i>
     </td>
-    <td align="center" width="285px">
-      <b>อัฎษฎา วิริยา</b><br />
-      <i>650612107</i><br />
+    <td align="center" width="160px">
+      <b>อัฎษฎา วิริยา</b><br>
+      <i>650612107</i>
     </td>
-    <td align="center" width="265px">
-      <b>อาทิตยา เที่ยงอารมณ์</b><br />
-      <i>650612108</i><br />
+    <td align="center" width="160px">
+      <b>อาทิตยา เที่ยงอารมณ์</b><br>
+      <i>650612108</i>
     </td>
   </tr>
 </table>
+
 
 
 ---
