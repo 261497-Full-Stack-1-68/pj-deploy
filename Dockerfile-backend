@@ -1,0 +1,18 @@
+# https://github.com/261497-Full-Stack-1-68/pj-backend
+
+FROM oven/bun:1.1
+
+WORKDIR /app
+
+# copy dependencies
+COPY bun.lock package.json ./
+
+RUN bun install
+
+# copy source code
+COPY . .
+
+# generate prisma client
+RUN bunx prisma generate
+
+CMD ["bun", "run", "src/index.ts"]
